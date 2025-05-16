@@ -9,21 +9,21 @@ We have created this project to help users send emails without even opening thei
 * Sends an email message with as well as without attachments using gmail
 
 
-# Setup required
+# Setup and installation ⚙️
 
 * smtplib module is a built in module in python for sending emails using the simple mail transfer protocol(SMTP). **No installation required for  this module**
 
-## Clone the repository
+## Clone the repository 🛠️
 
 ```bash
 git clone https://github.com/arnabmitra471/python_email_sender.git
 ```
-## Configuring the environment variables
+## Configuring the environment variables 📄
 You will need to create a `.env` file in your current working directory and put in the username and password there.
 
 **Important note** - If you have 2 step verification turned on, you will need to enter an app password instead of your actual password. Create one if you don't have setup one already.
 
-# Features
+ # Features 🎯 
 * Handles file attachments with MIME modules
 * Supports different MIME types
 * Can also send text email messages
@@ -32,7 +32,7 @@ You will need to create a `.env` file in your current working directory and put 
 * Handles missing files and authentication errors gracefully
 * Doesn't hard code the username and password for an account while logging in to send emails
 
-
+## code snippet showing how to configure tour credentials 🔑
 ```properties
 USER_NAME = "your_user_name"
 PASSWORD = "your app_password"
@@ -40,9 +40,18 @@ PASSWORD = "your app_password"
 
 **Please be sure to use an app password instead of your normal password**
 
-Run the script
+# Run the script ▶️
 ```shell
 python emails_with_python.py
+```
+# Sending emails - example usage
+```python
+send_email_with_attachment(
+    to_email="recipient@example.com",
+    subject="Hello! 📢",
+    body="This email contains an attachment. 📎",
+    file_path="path/to/file.pdf"
+)
 ```
 
 
